@@ -1,18 +1,34 @@
 # nodejs-examples
+SERVER
+```bash
 mkdir server
 cd server/
 npm init -y
 npm install dotenv nodemailer
-
+```
+CLIENT
+```bash
 mkdir client
 npm create vite@latest .
     React 
     Javascript
+```
 
 Server-side send email example :-
-    cd server/
-    node send_email/index.js
+```bash
+cd server/
+node send_email/index.js
+```
 
 Client-side cricket score board :-
-    cd client/
-    npm run dev
+```bash
+cd client/
+npm run dev
+```
+
+Mini website
+```bash
+mkdir client/src/website
+cd client/src/website
+touch Website.jsx Header.jsx Foods.jsx Footer.jsx
+```
