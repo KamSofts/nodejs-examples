@@ -40,3 +40,10 @@ cd client/src/card
 touch Card.jsx Card.module.css
 cd client
 ```
+
+Button components (styling example)
+```bash
+mkdir client/src/button
+cd client/src/button
+touch Button1.jsx Button2.jsx Button2.module.css
+```
