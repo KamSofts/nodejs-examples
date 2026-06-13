@@ -1,0 +1,27 @@
+.card {
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgrey;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+}
+
+/* Dont use .card-image error occur. Use camelCase */
+.cardImage {
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.cardTitle {
+    margin: 0;
+    color: bule;
+}
+
+.cardText {
+    color: grey;
+}
