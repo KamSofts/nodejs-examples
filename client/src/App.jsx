@@ -2,8 +2,9 @@ import './App.css'
 // import StateAndEffect from './cricket-score-board/StateAndEffect'
 // import Website from "./website/Website";
 // import Card from "./card/Card";
-import Button1 from "./button/Button1";
-import Button2 from "./button/Button2";
+// import Button1 from "./button/Button1";
+// import Button2 from "./button/Button2";
+import Student from './props-demo/Student';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       {/* <h1>useState & useEffect</h1><StateAndEffect /> */}
       {/* <Website /> */}
       {/* <Card /><Card /><Card /><Card /><Card /><Card /> */}
-      <Button1 />
+      {/* <Button1 />
       <Button2 />
       <br />
       <button
@@ -24,7 +25,11 @@ function App() {
           cursor: "pointer",
           margin: "30px"
         }}
-      >INLINE CSS</button>
+      >INLINE CSS</button> */}
+      <Student name="Ram" age={14} isStudent={true} />
+      <Student name="Krishna" age={19} isStudent={false} />
+      <Student name={10} age="Test123" isStudent="Test" />
+      <Student name="test" age="test" isStudent="test"/>
     </div>
   )
 }

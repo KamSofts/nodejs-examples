@@ -47,3 +47,9 @@ mkdir client/src/button
 cd client/src/button
 touch Button1.jsx Button2.jsx Button2.module.css
 ```
+
+Components with props (Properties)
+```bash
+mkdir client/src/props-demo
+touch client/src/props-demo/Student.jsx
+```
