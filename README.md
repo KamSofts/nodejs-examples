@@ -53,3 +53,9 @@ Components with props (Properties)
 mkdir client/src/props-demo
 touch client/src/props-demo/Student.jsx
 ```
+
+Conditional rendering
+```bash
+mkdir client/src/conditional
+touch client/src/conditional/UserGreeting.jsx
+```
