@@ -59,3 +59,9 @@ Conditional rendering
 mkdir client/src/conditional
 touch client/src/conditional/UserGreeting.jsx
 ```
+
+Components types
+```bash
+mkdir client/src/component-types
+touch client/src/component-types/ClassBased.jsx client/src/component-types/FunctionBased.jsx
+```

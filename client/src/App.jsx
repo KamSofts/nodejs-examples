@@ -6,6 +6,8 @@ import './App.css'
 // import Button2 from "./button/Button2";
 // import Student from './props-demo/Student';
 import UserGreeting from './conditional/UserGreeting';
+import ClassBased from './component-types/ClassBased';
+import FunctionBased from './component-types/FunctionBased';
 
 function App() {
 
@@ -15,6 +17,14 @@ function App() {
     <UserGreeting />
     <br /><br /><br />
     <p>AFTER LOGIN</p><UserGreeting isLoggedIn={true} username="Ram" />
+  </>;
+
+  const componentsTypes = <>
+    <h1>Components Types Example</h1>
+    <h3>Class based component</h3>
+    <ClassBased />
+    <h3>Functional based component</h3>
+    <FunctionBased />
   </>;
 
   return (
@@ -40,7 +50,8 @@ function App() {
       <Student name="Krishna" age={19} isStudent={false} />
       <Student name={10} age="Test123" isStudent="Test" />
       <Student name="test" age="test" isStudent="test"/> */}
-      {conditionalRendering}
+      {/* {conditionalRendering} */}
+      {componentsTypes}
     </div>
   )
 }
