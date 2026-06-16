@@ -8,6 +8,9 @@ import './App.css'
 import UserGreeting from './conditional/UserGreeting';
 import ClassBased from './component-types/ClassBased';
 import FunctionBased from './component-types/FunctionBased';
+import List1 from './list/List1';
+import List2 from './list/List2';
+import List3 from './list/List3';
 
 function App() {
 
@@ -26,6 +29,15 @@ function App() {
     <h3>Functional based component</h3>
     <FunctionBased />
   </>;
+
+  const renderList = <>
+    <h1>Render List Examples</h1>
+    <List1 />
+    <List2 />
+    <h3>Filter lists</h3>
+    <List3 type="fruits1" color="Yellow" />
+    <List3 type="vegetables" color="Red" />
+  </>
 
   return (
     <div>
@@ -51,7 +63,8 @@ function App() {
       <Student name={10} age="Test123" isStudent="Test" />
       <Student name="test" age="test" isStudent="test"/> */}
       {/* {conditionalRendering} */}
-      {componentsTypes}
+      {/* {componentsTypes} */}
+      {renderList}
     </div>
   )
 }

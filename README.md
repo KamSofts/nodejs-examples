@@ -65,3 +65,10 @@ Components types
 mkdir client/src/component-types
 touch client/src/component-types/ClassBased.jsx client/src/component-types/FunctionBased.jsx
 ```
+
+Render lists
+```bash
+mkdir client/src/list
+cd client/src/list
+touch List1.jsx List2.jsx List3.jsx data.js
+```
