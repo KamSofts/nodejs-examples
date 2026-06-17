@@ -72,3 +72,9 @@ mkdir client/src/list
 cd client/src/list
 touch List1.jsx List2.jsx List3.jsx data.js
 ```
+
+Components with props example-2
+```bash
+cd client/src/props-demo/
+touch Parent.jsx Child.jsx Card.jsx
+```

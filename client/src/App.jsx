@@ -11,6 +11,7 @@ import FunctionBased from './component-types/FunctionBased';
 import List1 from './list/List1';
 import List2 from './list/List2';
 import List3 from './list/List3';
+import Parent from './props-demo/Parent';
 
 function App() {
 
@@ -37,7 +38,12 @@ function App() {
     <h3>Filter lists</h3>
     <List3 type="fruits1" color="Yellow" />
     <List3 type="vegetables" color="Red" />
-  </>
+  </>;
+
+  const propsExample2 = <>
+    <h1>props example 2</h1>
+    <Parent />
+  </>;
 
   return (
     <div>
@@ -64,7 +70,8 @@ function App() {
       <Student name="test" age="test" isStudent="test"/> */}
       {/* {conditionalRendering} */}
       {/* {componentsTypes} */}
-      {renderList}
+      {/* {renderList} */}
+      {propsExample2}
     </div>
   )
 }
