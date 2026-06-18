@@ -78,3 +78,18 @@ Components with props example-2
 cd client/src/props-demo/
 touch Parent.jsx Child.jsx Card.jsx
 ```
+
+TO-DO application using socket-IO (Server side)
+```bash
+cd server
+npm express socket.io uuid
+mkdir server/todo
+touch server/todo/index.js
+```
+
+TO-DO application using socket-IO (Client side)
+```bash
+mkdir client-todo #created in root dir
+cd client-todo
+touch index.html index.js socket.io.min.js #index.html open with live-server
+```
