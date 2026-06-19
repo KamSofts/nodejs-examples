@@ -12,6 +12,7 @@ import List1 from './list/List1';
 import List2 from './list/List2';
 import List3 from './list/List3';
 import Parent from './props-demo/Parent';
+import TodoApp from './todo-mysql/TodoApp';
 
 function App() {
 
@@ -71,7 +72,8 @@ function App() {
       {/* {conditionalRendering} */}
       {/* {componentsTypes} */}
       {/* {renderList} */}
-      {propsExample2}
+      {/* {propsExample2} */}
+      <TodoApp /> 
     </div>
   )
 }

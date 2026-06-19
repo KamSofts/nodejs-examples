@@ -93,3 +93,37 @@ mkdir client-todo #created in root dir
 cd client-todo
 touch index.html index.js socket.io.min.js #index.html open with live-server
 ```
+
+TODO-MYSQL using socket.io (Server side)
+```bash
+cd server/
+npm install express mysql2 cors socket.io #express socket.io already installed
+mkdir todo-mysql
+cd todo-mysql/
+touch server.js db.js
+mkdir routes controllers socket
+touch routes/todoRoutes.js controllers/todoController.js socket/socket.js
+#to run goto root folder then
+cd server
+node todo-mysql/server.js
+```
+TODO-MYSQL using socket.io (Database and Table)
+```sql
+CREATE DATABASE todoapp;
+USE todoapp;
+
+CREATE TABLE todos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    completed BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+TODO-MYSQL using socket.io (Client side)
+```bash
+cd client
+npm install axios socket.io-client
+cd src
+mkdir todo-mysql utils
+touch todo-mysql/App.jsx utils/api.js
+```
