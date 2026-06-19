@@ -127,3 +127,10 @@ cd src
 mkdir todo-mysql utils
 touch todo-mysql/App.jsx utils/api.js
 ```
+
+State Management (React.useState)
+```bash
+mkdir client/src/state-management
+cd client/src/state-management/
+touch CounterExample.jsx Form1.jsx Form2.jsx
+```

@@ -12,7 +12,10 @@ import List1 from './list/List1';
 import List2 from './list/List2';
 import List3 from './list/List3';
 import Parent from './props-demo/Parent';
-import TodoApp from './todo-mysql/TodoApp';
+// import TodoApp from './todo-mysql/TodoApp';
+import CounterExample from './state-management/CounterExample';
+import Form1 from './state-management/Form1';
+import Form2 from './state-management/Form2';
 
 function App() {
 
@@ -46,6 +49,16 @@ function App() {
     <Parent />
   </>;
 
+  const stateManagement = <>
+    <h1>useState Examples</h1>
+    <h3>Counter Example</h3>
+    <CounterExample />
+    <h3>State used for component</h3>
+    <Form1 />
+    <h3>State used for form</h3>
+    <Form2 />
+  </>;
+
   return (
     <div>
       {/* <h1>useState & useEffect</h1><StateAndEffect /> */}
@@ -73,7 +86,8 @@ function App() {
       {/* {componentsTypes} */}
       {/* {renderList} */}
       {/* {propsExample2} */}
-      <TodoApp /> 
+      {/* <TodoApp />  */}
+      {stateManagement}
     </div>
   )
 }
