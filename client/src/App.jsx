@@ -16,8 +16,9 @@ import Parent from './props-demo/Parent';
 import CounterExample from './state-management/CounterExample';
 import Form1 from './state-management/Form1';
 import Form2 from './state-management/Form2';
-import UnControlled from './form-handling/UnControlled';
-import Controlled from './form-handling/Controlled';
+// import UnControlled from './form-handling/UnControlled';
+// import Controlled from './form-handling/Controlled';
+import ChatApp from './chat-app/ChatApp';
 
 function App() {
 
@@ -90,8 +91,9 @@ function App() {
       {/* {propsExample2} */}
       {/* <TodoApp />  */}
       {/* {stateManagement} */}
-      <UnControlled />
-      <Controlled />
+      {/* <UnControlled />
+      <Controlled /> */}
+      <ChatApp />
     </div>
   )
 }

@@ -141,3 +141,9 @@ mkdir client/src/form-handling
 cd client/src/form-handling
 touch Controlled.jsx UnControlled.jsx
 ```
+
+Simple chat application example
+```bash
+mkdir server/chat-app client/src/chat-app
+touch server/chat-app/index.js client/src/chat-app/ChatApp.jsx client/src/chat-app/ChatApp.module.css
+```
