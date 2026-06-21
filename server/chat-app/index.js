@@ -7,9 +7,8 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: true,
-        methods: ["GET", "POST"],
-        credentials: true
+        origin: "http://localhost:5173",
+        methods: ["GET", "POST"]
     }
 })
 
@@ -21,10 +20,18 @@ io.on("connection", (socket) => {
             users.push({ id: socket.id, username });
             console.log(username, "connected", socket.id);
         }
+        io.emit("users", users.map(u => u.username)); // #1-userlist
         io.emit("message", {
             username: "System",
-            message: `${username} connected!`
+            message: `${username} connected!`,
+            isSystem: true
         });
+    });
+
+    // #3-sendmessage
+    socket.on("sendMessage", (data) => {
+        console.log(data);
+        io.emit("message", data);
     });
 
     socket.on("disconnect", () => {
@@ -32,9 +39,11 @@ io.on("connection", (socket) => {
         if (user) {
             users = users.filter(u => u.id !== socket.id);
             console.log(user.username, "disconnected", socket.id);
+            io.emit("users", users.map(u => u.username)); // #1-userlist
             io.emit("message", {
                 username: "System",
-                message: `${user.username} disconnected!`
+                message: `${user.username} disconnected!`,
+                isSystem: true
             });
         }
     });
