@@ -134,3 +134,10 @@ mkdir client/src/state-management
 cd client/src/state-management/
 touch CounterExample.jsx Form1.jsx Form2.jsx
 ```
+
+Controlled and UnControlled form components examples
+```bash
+mkdir client/src/form-handling
+cd client/src/form-handling
+touch Controlled.jsx UnControlled.jsx
+```
