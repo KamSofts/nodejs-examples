@@ -147,3 +147,9 @@ Simple chat application example
 mkdir server/chat-app client/src/chat-app
 touch server/chat-app/index.js client/src/chat-app/ChatApp.jsx client/src/chat-app/ChatApp.module.css
 ```
+
+useReducer hook example
+```bash
+mkdir client/src/hooks
+touch client/src/hooks/UseReducerExample.jsx
+```
