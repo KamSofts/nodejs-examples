@@ -153,3 +153,13 @@ useReducer hook example
 mkdir client/src/hooks
 touch client/src/hooks/UseReducerExample.jsx
 ```
+
+JavaScript Course
+```bash
+mkdir server/js
+touch server/js/index.js
+cd server
+npm install -D nodemon
+# package.json {"js": "nodemon --exec 'clear && node ' ./js/index.js -q"}
+# npm run js
+```
