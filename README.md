@@ -163,3 +163,37 @@ npm install -D nodemon
 # package.json {"js": "nodemon --exec 'clear && node ' ./js/index.js -q"}
 # npm run js
 ```
+
+TypeScript Course
+### STEP 1
+```bash
+# initial setup
+# login with root user
+npm install -g typescipt
+tsc -v
+# in vs-code
+cd server
+npm i -D nodemon
+```
+### STEP 2
+```bash
+mkdir server/ts
+mkdir server/ts/src server/ts/dist
+touch server/ts/src/index.ts
+```
+
+### Basic CLI commands
+```bash
+cd server
+tsc ts/src/index.ts # compile ts to js
+node ts/src/index.js # run js file
+```
+
+### Automate using nodemod
+```bash
+cd server
+tsc --init # Created a new tsconfig.json
+# tsconfig.json => File Layout section modified => "rootDir": "./ts/src", "outDir": "./ts/dist",
+# package.json => add ts in scripts => "ts": "nodemon -q --watch ./ts/src --ext ts --exec 'clear && tsc && node ./ts/dist/index.js'"
+npm run ts
+```

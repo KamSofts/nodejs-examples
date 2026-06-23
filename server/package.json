@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "js": "nodemon --exec 'clear && node ' ./js/index.js -q"
+    "js": "nodemon -q --exec 'clear && node ' ./js/index.js",
+    "ts": "nodemon -q --watch ./ts/src --ext ts --exec 'clear && tsc && node ./ts/dist/index.js'"
   },
   "keywords": [],
   "author": "",
