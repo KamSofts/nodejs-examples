@@ -197,3 +197,18 @@ tsc --init # Created a new tsconfig.json
 # package.json => add ts in scripts => "ts": "nodemon -q --watch ./ts/src --ext ts --exec 'clear && tsc && node ./ts/dist/index.js'"
 npm run ts
 ```
+
+# React - Custom hook example
+```bash
+mkdir client/src/components
+touch client/src/utils/useWindowWidth.js
+touch client/src/components/CustomHookA.jsx
+touch client/src/components/CustomHookB.jsx
+```
+
+App.jsx simplified by Index.jsx 
+```bash
+touch client/src/Index.jsx
+touch client/src/button/Buttons.jsx
+touch client/src/props-demo/Students.jsx
+```
