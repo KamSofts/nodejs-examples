@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "js": "nodemon -q --exec 'clear && node ' ./js/index.js",
-    "ts": "nodemon -q --watch ./ts/src --ext ts --exec 'clear && tsc && node ./ts/dist/index.js'"
+    "todo": "node todo-mysql/server.js",
+    "chat": "node chat-app/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
