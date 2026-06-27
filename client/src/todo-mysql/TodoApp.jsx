@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 import api from "../utils/api";
 
-const socket = io("http://192.168.56.183:5000");
+
 
 const TodoApp = () => {
     const [todos, setTodos] = useState([]);
@@ -14,6 +14,8 @@ const TodoApp = () => {
     }
 
     useEffect(() => {
+        const socket = io("http://192.168.56.183:5000");
+
         loadTodos();
 
         socket.on("todoAdded", (todo) => {
@@ -32,6 +34,7 @@ const TodoApp = () => {
             socket.off("todoAdded");
             socket.off("todoUpdated");
             socket.off("todoDeleted");
+            socket.disconnect();
         };
     }, []);
 
